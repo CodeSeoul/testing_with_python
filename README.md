@@ -14,6 +14,17 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload --reload-dir app
 ```
 
+### Testing
+### All Tests
+```shell
+pytest
+```
+
+### Integration Tests
+```shell
+pytest app/tests/integration
+```
+
 ## Viewing
 Visit http://localhost:8000/docs for viewing and testing with Swagger. Use http://localhost:8000/redoc if you prefer Redoc.
 
