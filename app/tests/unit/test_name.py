@@ -15,7 +15,7 @@ def test_get_name_success(monkeypatch, generated_id: int, generated_name_text: s
     result = routes.get_name(generated_id, None)
     assert result == expected_name
 
-def test_get_name_error(monkeypatch, generated_id: int, generated_name_text: str):
+def test_get_name_error(monkeypatch, generated_id: int):
 
     def mock_get_db_name(_, name_id):
         assert name_id == generated_id
