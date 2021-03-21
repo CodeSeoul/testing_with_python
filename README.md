@@ -25,6 +25,16 @@ pytest
 pytest app/tests/integration
 ```
 
+### Unit Tests
+```shell
+pytest app/tests/unit
+```
+
+### Code Coverage
+```shell
+pytest --cov=app
+```
+
 ## Viewing
 Visit http://localhost:8000/docs for viewing and testing with Swagger. Use http://localhost:8000/redoc if you prefer Redoc.
 
